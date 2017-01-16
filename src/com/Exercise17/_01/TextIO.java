@@ -20,8 +20,15 @@ public class TextIO {
 	public static void main(String[] args) {
 		Random rnd = new Random();
 		try {
+			/*
+			 * PrintWriter to output into a new file called "Exercise17-01.txt".
+			 */
 			PrintWriter pw = new PrintWriter(new FileOutputStream("Exercise17-01.txt"), true);
 			for (int i = 0; i < 100; i++) {
+				/*
+				 * Print 100 Random Int numbers into the "Exercise17-01.txt"
+				 * file.
+				 */
 				pw.print(rnd.nextInt(100) + "\n");
 			}
 			pw.close();
