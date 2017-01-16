@@ -21,7 +21,7 @@ public class BinaryIO {
 		Random rnd = new Random();
 
 		try {
-			DataOutputStream dataOut = new DataOutputStream(new FileOutputStream("Exercise17-02.txt"));
+			DataOutputStream dataOut = new DataOutputStream(new FileOutputStream("Exercise17-02.dat"));
 
 			for (int i = 0; i < 100; i++) {
 				dataOut.writeInt(rnd.nextInt(10000));
