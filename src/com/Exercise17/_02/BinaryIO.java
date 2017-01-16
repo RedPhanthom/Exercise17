@@ -23,14 +23,14 @@ public class BinaryIO {
 		try {
 			/*
 			 * DataOutPutStream to output Binary into a file called
-			 * "Exercise17-02.dat"
+			 * "Exercise17-02.dat".
 			 */
 			DataOutputStream dataOut = new DataOutputStream(new FileOutputStream("Exercise17-02.dat"));
 
 			for (int i = 0; i < 100; i++) {
 				/*
 				 * Output Binary data into "Exercise17-02.dat" using the Random
-				 * Class
+				 * Class.
 				 */
 				dataOut.writeInt(rnd.nextInt(10000));
 			}
