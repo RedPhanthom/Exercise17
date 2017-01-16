@@ -11,7 +11,6 @@ the work of other students and/or persons.
 --------------------------------------------------------------------*/
 package com.Exercise17._01;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Random;
@@ -26,7 +25,7 @@ public class TextIO {
 				pw.print(rnd.nextInt(100) + "\n");
 			}
 			pw.close();
-		} catch (FileNotFoundException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
